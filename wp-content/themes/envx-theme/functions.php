@@ -17,3 +17,5 @@ function envx_assets() {
   wp_enqueue_script( 'envx-js', get_template_directory_uri() . '/assets/js/mainscript.js', array(), $version, true );
 }
 add_action( 'wp_enqueue_scripts', 'envx_assets' );
+
+add_theme_support( 'title-tag' );

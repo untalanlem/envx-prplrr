@@ -5,9 +5,6 @@ Template Name: Home page
 
 get_header();
 
-?>
+  get_template_part('template-parts/home/');
 
-<h1>Home page</h1>
-
-<?php
 get_footer();

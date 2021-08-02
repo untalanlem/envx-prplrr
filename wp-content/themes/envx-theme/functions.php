@@ -19,3 +19,19 @@ function envx_assets() {
 add_action( 'wp_enqueue_scripts', 'envx_assets' );
 
 add_theme_support( 'title-tag' );
+
+add_theme_support(
+  'custom-logo',
+  array(
+    'height'      => 250,
+    'width'       => 250,
+    'flex-width'  => true,
+    'flex-height' => true,
+  )
+);
+
+register_nav_menus(
+  array(
+    'menu-1' => esc_html__( 'Primary', 'underscores' ),
+  )
+);
